@@ -9,3 +9,12 @@ C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\Busines
 C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
 C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\bin\Debug\net8.0\BusinessLayer.runtimeconfig.json
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\bin\Debug\net8.0\EntityLayer.dll
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\bin\Debug\net8.0\EntityLayer.pdb
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CopyComplete
+C:\Users\Sheki-S\source\repos\Admin_Panel\BusinessLayer\obj\Debug\net8.0\BusinessLayer.genruntimeconfig.cache

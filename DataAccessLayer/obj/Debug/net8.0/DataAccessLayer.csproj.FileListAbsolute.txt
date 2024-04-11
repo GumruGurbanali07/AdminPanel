@@ -15,3 +15,4 @@ C:\Users\Sheki-S\source\repos\Admin_Panel\DataAccessLayer\obj\Debug\net8.0\refin
 C:\Users\Sheki-S\source\repos\Admin_Panel\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\Sheki-S\source\repos\Admin_Panel\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\Sheki-S\source\repos\Admin_Panel\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\Sheki-S\source\repos\Admin_Panel\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json

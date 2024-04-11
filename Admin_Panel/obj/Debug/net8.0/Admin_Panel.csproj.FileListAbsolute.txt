@@ -138,3 +138,4 @@ C:\Users\Sheki-S\source\repos\Admin_Panel\Admin_Panel\obj\Debug\net8.0\refint\Ad
 C:\Users\Sheki-S\source\repos\Admin_Panel\Admin_Panel\obj\Debug\net8.0\Admin_Panel.pdb
 C:\Users\Sheki-S\source\repos\Admin_Panel\Admin_Panel\obj\Debug\net8.0\Admin_Panel.genruntimeconfig.cache
 C:\Users\Sheki-S\source\repos\Admin_Panel\Admin_Panel\obj\Debug\net8.0\ref\Admin_Panel.dll
+C:\Users\Sheki-S\source\repos\Admin_Panel\Admin_Panel\obj\Debug\net8.0\Admin_Panel.sourcelink.json
