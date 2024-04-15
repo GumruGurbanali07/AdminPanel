@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.Repositories
 {
+
     public class GenericRepository<T> : IRepository<T> where T : class
     {
-        AppDbContext c=new AppDbContext();
-        DbSet<T> _object;
-        public GenericRepository()
+        private readonly AppDbContext c;
+        private readonly DbSet<T> _object;
+
+        public GenericRepository(DbContextOptions<AppDbContext> options)
         {
-            _object=c.Set<T>(); 
+            c = new AppDbContext(options);
+            _object = c.Set<T>();
         }
         public void Delete(T p)
         {
@@ -45,3 +48,4 @@ namespace DataAccessLayer.Concrete.Repositories
         }
     }
 }
+

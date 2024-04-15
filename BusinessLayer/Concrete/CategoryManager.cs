@@ -1,5 +1,7 @@
-﻿using DataAccessLayer.Concrete.Repositories;
+﻿using DataAccessLayer.Concrete;
+using DataAccessLayer.Concrete.Repositories;
 using EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +12,12 @@ namespace BusinessLayer.Concrete
 {
     public class CategoryManager
     {
-        GenericRepository<Category> repo=new GenericRepository<Category> ();
+        private readonly GenericRepository<Category> repo;
+
+        public CategoryManager(DbContextOptions<AppDbContext> options)
+        {
+            repo = new GenericRepository<Category>(options);
+        }
         public List<Category> GetAll()
         {
             return repo.List();

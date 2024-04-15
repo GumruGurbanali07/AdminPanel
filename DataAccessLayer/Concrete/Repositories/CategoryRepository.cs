@@ -12,8 +12,14 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class CategoryRepository : ICategoryDAL
     {
-        AppDbContext c= new AppDbContext();
-        DbSet<Category> _object;
+        private readonly AppDbContext c;
+        private readonly DbSet<Category> _object;
+
+        public CategoryRepository(DbContextOptions<AppDbContext> options)
+        {
+            c = new AppDbContext(options);
+            _object = c.Set<Category>();
+        }
         public void Delete(Category p)
         {
             _object.Remove(p);
