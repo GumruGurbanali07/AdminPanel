@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.Concrete.Repositories;
 using EntityLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
@@ -10,21 +12,32 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class CategoryManager
-    {
-        private readonly GenericRepository<Category> repo;
+    public class CategoryManager : ICategoryService
 
-        public CategoryManager(DbContextOptions<AppDbContext> options)
+    {
+        ICategoryDAL _categoryDAL;
+        public CategoryManager(ICategoryDAL categoryDAL)
         {
-            repo = new GenericRepository<Category>(options);
+            _categoryDAL = categoryDAL;
+            
         }
-        public List<Category> GetAll()
+        //private readonly GenericRepository<Category> repo;
+
+        //public CategoryManager(DbContextOptions<AppDbContext> options)
+        //{
+        //    repo = new GenericRepository<Category>(options);
+        //}
+        //public List<Category> GetAll()
+        //{
+        //    return repo.List();
+        //}
+        //public void AddCategory(Category p)
+        //{
+        //    repo.Insert(p);
+        //}
+        public List<Category> GetList()
         {
-            return repo.List();
-        }
-        public void AddCategory(Category p)
-        {
-            repo.Insert(p);
+            return _categoryDAL.List();
         }
     }
 }
