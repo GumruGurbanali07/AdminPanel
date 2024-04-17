@@ -1,6 +1,9 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,20 +11,20 @@ namespace Admin_Panel.Controllers
 {
     public class CategoryController : Controller
     {
-        //private readonly CategoryManager cm;
+        private readonly CategoryManager cm;
 
-        //public CategoryController(DbContextOptions<AppDbContext> options)
-        //{
-        //    cm = new CategoryManager(options);
-        //}
+        public CategoryController(EFCategoryDAL eFCategoryDAL)
+        {
+            cm = new CategoryManager(eFCategoryDAL);
+        }
         public IActionResult Index()
         {
             return View();
         }
         public ActionResult GetCategoryList()
         {
-            // var categoryValues = cm.GetAll();
-            return View();//categoryValues);
+            var categoryValues = cm.GetList();
+            return View(categoryValues);
         }
         [HttpGet]
         public ActionResult AddCategory()
@@ -33,7 +36,20 @@ namespace Admin_Panel.Controllers
         public ActionResult AddCategory(Category p)
         {
            // cm.AddCategory(p);
-            return RedirectToAction("GetCategoryList");
+           CategoryValidatior category = new CategoryValidatior();
+            ValidationResult results=category.Validate(p);
+            if(results.IsValid) {
+                cm.CategoryAdd(p);
+                return RedirectToAction("GetCategoryList");
+            }
+            else
+            {
+                foreach(var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
     }
 }

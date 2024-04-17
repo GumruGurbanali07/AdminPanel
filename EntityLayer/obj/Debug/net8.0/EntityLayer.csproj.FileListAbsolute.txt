@@ -9,3 +9,4 @@ C:\Users\Sheki-S\source\repos\Admin_Panel\EntityLayer\obj\Debug\net8.0\EntityLay
 C:\Users\Sheki-S\source\repos\Admin_Panel\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
 C:\Users\Sheki-S\source\repos\Admin_Panel\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
 C:\Users\Sheki-S\source\repos\Admin_Panel\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll
+C:\Users\Sheki-S\source\repos\Admin_Panel\EntityLayer\obj\Debug\net8.0\EntityLayer.sourcelink.json

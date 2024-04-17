@@ -21,6 +21,12 @@ namespace BusinessLayer.Concrete
             _categoryDAL = categoryDAL;
             
         }
+
+        public void CategoryAdd(Category category)
+        {
+           _categoryDAL.Insert(category);
+        }
+
         //private readonly GenericRepository<Category> repo;
 
         //public CategoryManager(DbContextOptions<AppDbContext> options)
