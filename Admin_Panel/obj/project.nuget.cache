@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U84ka5Igj32KGRf2sIoiyU7R34otNObh0WvW5SpdlnM6nhjrmrB4IMekBjxeh87Dhcd5wbkuRpTnD/eUZ+X8DA==",
+  "dgSpecHash": "U5eNPo+qb0RupXPdAH3erT6NeYwnWccthgUvRQHzjvXZ4PqY3NXpAcw5XbaBoAjpz+6RFax157SNz8LcicGjCA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sheki-S\\source\\repos\\Admin_Panel\\Admin_Panel\\Admin_Panel.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\Sheki-S\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Sheki-S\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Sheki-S\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

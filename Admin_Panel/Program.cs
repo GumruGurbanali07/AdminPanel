@@ -1,16 +1,22 @@
+using BusinessLayer.ValidationRules;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CategoryValidatior>()); // Register FluentValidation
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+    
 });
-
+builder.Services.AddScoped<ICategoryDAL, EFCategoryDAL>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

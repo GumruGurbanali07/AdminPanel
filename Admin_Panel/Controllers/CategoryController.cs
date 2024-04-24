@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
@@ -12,10 +13,12 @@ namespace Admin_Panel.Controllers
     public class CategoryController : Controller
     {
         private readonly CategoryManager cm;
+        private readonly ICategoryDAL _categoryDAL;
 
-        public CategoryController(EFCategoryDAL eFCategoryDAL)
+        public CategoryController(ICategoryDAL categoryDAL)
         {
-            cm = new CategoryManager(eFCategoryDAL);
+            _categoryDAL = categoryDAL;
+            cm = new CategoryManager(_categoryDAL);
         }
         public IActionResult Index()
         {

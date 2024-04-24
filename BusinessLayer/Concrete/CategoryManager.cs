@@ -27,6 +27,11 @@ namespace BusinessLayer.Concrete
            _categoryDAL.Insert(category);
         }
 
+        public Category GetById(int id)
+        {
+            return _categoryDAL.Get(x=>x.CategoryID==id); 
+        }
+
         //private readonly GenericRepository<Category> repo;
 
         //public CategoryManager(DbContextOptions<AppDbContext> options)
